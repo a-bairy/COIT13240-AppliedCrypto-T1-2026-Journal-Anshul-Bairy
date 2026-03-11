@@ -1,10 +1,10 @@
 # COIT13240 Applied Cryptography (2025, Term 1) Journal
 
-- **Student Name:**
-- **Student ID:**
-- **Student Email:**
-- **Campus:**
-- **Tutor:**
+- **Student Name:** **Anshul Bairy**
+- **Student ID:** **12266750**
+- **Student Email:** **anshul.bairy@cqumail.com**
+- **Campus:** **Rockhampton North**
+- **Tutor:** **Tek Awasthi**
 
 ---
 

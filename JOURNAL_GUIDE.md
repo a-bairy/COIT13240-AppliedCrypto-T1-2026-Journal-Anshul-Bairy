@@ -1,5 +1,7 @@
 # COIT13240 Journal Guide
 
+- THIS IS A TEMPORARY CHANGE FROM LINUX PUTTY CLI 
+
 This guide explains how to write high-quality weekly journal entries. Read it carefully before you begin.
 
 ---

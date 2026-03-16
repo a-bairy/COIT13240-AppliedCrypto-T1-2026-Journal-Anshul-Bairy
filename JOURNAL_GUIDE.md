@@ -1,5 +1,5 @@
 # COIT13240 Journal Guide
-
+*This is a TEST SENTENCE to test the git push command on linux PuTTY CLI
 This guide explains how to write high-quality weekly journal entries. Read it carefully before you begin.
 
 ---

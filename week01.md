@@ -5,7 +5,6 @@
 ---
 
 ## Lecture Notes - Cryptographic Concepts, Terminology & Tools
---
 I wrote out all the lecture concepts by hand because I find writing stuff out helps me remember it way better than just reading slides. My notes cover the CIA Triad, AAA Model, the encryption model with the formulas, symmetric vs asymmetric, and Caeser cipher worked examples.
 
 ![Encryption Model and Learning Outcomes](images/w01-notes-encryption-model.png)
@@ -59,4 +58,50 @@ The thing that clicked for me here was that this is literally the asymmetric enc
 This was easy since I've been using Git for about a month now for my personal notes. Cloned both my journal repo and the unit's private repo:
 ```bash
 mkdir git
-git clone git@github.com:
+git clone git@github.com:Umair-Ullah-Tariq/coit13240y26t1.git
+git clone git@github.com:a-bairy/COIT13240-AppliedCrypto-T1-2026-Journal-Anshul-Bairy.git
+```
+
+I later moved them into `git` folder using `mv` to keep things organized.
+
+One thing that tirpped me up was when I tried to commit for the first time it threw an error saying I need to set my global email and user name. Had to run:
+
+```bash
+git config --global user.email "anshul.bairy@cqumail.com"
+git config --global user.name "Anshul Bairy"
+```
+
+After that everything worked fine. Add, commit, push & DONE.
+![Git push working](images/w01-git-push.png)
+
+---
+
+## Reflections
+**Easiest Part:** VirtualBox + PuTTY setup. I've done it before for COIT12146 so there was nothing new here.
+**Hardest Part:** SSH keys. I didn't understand why we were typing these commands or what they were doing. I was just experimenting until something worked. But after getting it to work and thinking about it, I get it now. Using SSH keys to push directly from VM to GitHub is way easier than the alternative (like using FileZilla to copy files to Windows and then uploading to GitHub through the browser). The key setup is annoying but you only do it once.
+**What I'd do differently:** Check Echo360 earlier when Moodle recordings aren't availalbe. Aslo should've just read the [GitHub SSH docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) from the start instead of guessing.
+**Stuff I already kew from other units:**
+- CIA Triad came up in Network Security concepts and Electronic Crime and Digital Forensics, but those units were more about policies. This unit is going into the actual technical stuff (the algorithms).
+- Caesar cipher uses mod 26 which is similar to how modular arithmetic works in blockchain (from Intro to Blockchain Technologies Unit).
+- Linux and VirtualBox is basically the same setup as COIT12146 this term.
+
+---
+## Beyond the Material
+### NAT and Port Forwarding
+I wanted to actually understand what's happening when PuTTY connects to `127.0.0.1:2201` and somehow reaches my VM. Found a video by Gate Smashers on Youtube [Gate Smashers: NAT](https://youtu.be/47PUj7OSGkA) about NAT and port forwarding (I had to learn it in my third language Hindi to understand the concept better). bascially VirtualBox is acting as a NAT gateway and forwarding traffic from my Windows machine's port 2201 into the Vm's port 22 where SSH is listening.
+
+### AI Being Used for Cyber Attacks
+Read a news article about how Anthropic's Claude AI exploited by state-sponsered groups (including Chinese hackers) to run like 80-90% of complex operations autonomously, stuff like espionage and data theft. There was even a vulnerability (CVE-2025-59536) that allowed remote code execution.
+Pretty wild considering we're learning about encrytion and authentication in this unit to protect against this kind of thing. Shows that confidentiality and integrity (the two things this unit focuses on) aren't just theory, thery'e being actively attacked right now, and AI is making those attacks faster and smarter.
+
+---
+## Self-Check
+- [x] Can explain CIA Traid in my own words
+- [x] Can explain AAA model
+- [x] Can encrypt/decrypt with Caesar cipher by hand
+- [x] Understand `C = (P+K) mod 26`
+- [x] Know why Caesar only has 26 possible keys
+- [x] Can tell the difference between symmetric and asymmetric
+- [x] Can connect to VM via PuTTY
+- [x] Cloned journal repo and made first commit
+- [x] Know the git workflow: pull > edit > add > commit > push 

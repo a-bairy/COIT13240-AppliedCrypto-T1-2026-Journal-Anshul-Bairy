@@ -26,3 +26,37 @@ I've also used LInux before - I rented a server from Oracle Cloud a while back a
 ![PuTTY connected to my VM](images/w01-putty-connected.png)
 
 ### SSH Key Generation
+This was honestly the hardest part of the week for me. I couldn't get into the 2026 tutorial recording on Moodle so I was watching the 2024 Echo360 recording by Steve Gordan, and the steps didn't exactly match up with what I needed to do.
+
+I kept trying different things in PuTTY until I figured out the right command:
+
+```bash
+ssh-keygen -t ed25519 -C "anshul.bairy@cqumail.com"
+```
+
+Then I had to get the public key and put it on GitHub:
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+Copied the output (in PuTTY you just select the text and it copies automatically, which I didn't know at first) and pasted it into GitHub under SEttings > SSH Keys.
+
+![SSH key generation](images/w01-ssh-keygen.png)
+
+Tested it with:
+```bash
+ssh -T git@github.com
+```
+
+And it worked, got the "successfully authenticated" message.
+
+![SSH test success](images/w01-ssh-test-success.png)
+
+The thing that clicked for me here was that this is literally the asymmetric encryption stuff from the lecture but in practice. Private key stays on my machine, public key goes to GitHub. They verify each other mathematically instead of using a password. Before doing this I understood the concept from the slides but it didn't really make sense until I actually did it.
+
+### Git Clone, Commit, Push
+This was easy since I've been using Git for about a month now for my personal notes. Cloned both my journal repo and the unit's private repo:
+```bash
+mkdir git
+git clone git@github.com:

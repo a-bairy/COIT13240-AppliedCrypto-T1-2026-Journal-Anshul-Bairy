@@ -11,7 +11,6 @@ I wrote out all the lecture concepts by hand because I find writing stuff out he
 ![CIA Triad, AAA, Symmetric vs Asymmetric](images/w01-notes-cia-aaa-symmetric.png)
 ![Caesar Cipher Worked Examples](images/w01-notes-caesar-cipher.png)
 
-I also used mermaid.js to help me make cleaner flowcharts and tables for my notes since drawing them by hand wasn't hte best for more complex diagrams.
 
 ---
 

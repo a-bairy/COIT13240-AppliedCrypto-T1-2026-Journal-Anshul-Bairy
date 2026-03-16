@@ -90,9 +90,11 @@ After that everything worked fine. Add, commit, push & DONE.
 ### NAT and Port Forwarding
 I wanted to actually understand what's happening when PuTTY connects to `127.0.0.1:2201` and somehow reaches my VM. Found a video by Gate Smashers on Youtube [Gate Smashers: NAT](https://youtu.be/47PUj7OSGkA) about NAT and port forwarding (I had to learn it in my third language Hindi to understand the concept better). bascially VirtualBox is acting as a NAT gateway and forwarding traffic from my Windows machine's port 2201 into the Vm's port 22 where SSH is listening.
 
-### AI Being Used for Cyber Attacks
-Read a news article about how Anthropic's Claude AI exploited by state-sponsered groups (including Chinese hackers) to run like 80-90% of complex operations autonomously, stuff like espionage and data theft. There was even a vulnerability (CVE-2025-59536) that allowed remote code execution.
-Pretty wild considering we're learning about encrytion and authentication in this unit to protect against this kind of thing. Shows that confidentiality and integrity (the two things this unit focuses on) aren't just theory, thery'e being actively attacked right now, and AI is making those attacks faster and smarter.
+### AI Model Distillation Attacks
+Found this article by Anthropic where they caught Chinese AI labs like DeepSeek, Moonshot AI and MiniMax basically stealing from Claude: [Detecting and Preventing Distillation Attacks](https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks).
+What they were doing was making was making thousands of fake accounts and sending millions of prompts to Claude to cature its responses, then using all that to train their own models. DeepSeek did like 150,000+ exchanges and MiniMax did over 13 million. They were going after Claude's coding and reasoning abilities specifically.
+The problem is these copied models don't have any of the safety features, so all the dangerous capabilities just get out there with no guardrails. DeepSeek was even getting claude to make censorship-safe answers for politically sensitive topics so they could train their models to avoid these questions.
+What I found interesting is how Anthropic actually caught them: they were tracking IP addresses, request metadata and usage patterns. That's basically the accounting part of the AAA model we learned about this week, monitoring what's going on so you can catch when something's off.
 
 ---
 ## Self-Check

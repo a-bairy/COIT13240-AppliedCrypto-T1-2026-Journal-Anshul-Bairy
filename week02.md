@@ -14,6 +14,7 @@ This week is foundation for everything. If I don't understand *why* classical ci
 ---
 
 ## 3. 🗺️ Concept Map
+> I have used AI to generate this Concept Map (I've used Gemini 3.1 Pro (High) to generate this concept map sourcing my textbook as I like to look at flow charts and mermaid code helps me in building a perfect ADHD friendly flowchart that helps me look at all the concepts at one place.
 
 ```mermaid
 graph TD

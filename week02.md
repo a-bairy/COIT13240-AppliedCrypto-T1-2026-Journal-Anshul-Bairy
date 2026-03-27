@@ -1,4 +1,5 @@
-# Week 2
+# Week 2: Classical Ciphers & Cryptanalysis
+> "The attacker ALWAYS knows the algorithm. Stop trying to hide the math; hide the key."
 
 [Return to contents](README.md)
 

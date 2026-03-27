@@ -48,5 +48,10 @@ I also included two versions of the Cipher Comparision Table at the end (one tab
 
 ---
 
-## Tutorial Tasks & Cryptanalysis
-### 
+## Tutorial Tasks
+### Task 1: Complete the Quiz
+Did the Moodle quiz before the tutorial started. It was mostly a recap of Week 1 concepts and easy marks.
+
+### Task 2: Casesar Decrypt (Manual)
+First actual task was decrypting `"pjhigpaxp"` with a known key of 15 using `P = (C-K) mod 26`. This tripped me up at first because of the negative modulo math, but once I wrote it out by hand it clicked. For example, `j(9) -15 = -6`. In python this wraps to 20 instinctively, which is `u`. Running the whole thing by hand gave me `"australia"`. Doing this manually proved why classical mapping is tedious for a human but inheritly built into Python's logic.
+

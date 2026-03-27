@@ -33,10 +33,20 @@ graph TD
     I --> N((Kasiski Method Vulnerable))
     J --> O((Unconditionally Secure))
 ```
+## Lecture Notes : The Evolution of Ciphers
+I wrote all the lecture concepts by hand again because there was so much new stuff to wrap my head around this week. We started with the basic Caesar Cipher and moved up to more complex ones, eventually getting to the One-Time Pad which is technically perfect but basically useless in the real world.
 
+The main thing that clicked for me is that every new cipher was just designed to fix whatever was broken in the previous one. Understanding that progreassion is basically understanding the design principles of modern cryptography.
+
+Here are my hand written notes from this week:
 ![Week 2 Notes Part 1](images/02_week_260319_003440_1.jpg)
 ![Week 2 Notes Part 2](images/02_week_260319_003440_2.jpg)
 ![Week 2 Notes Part 3](images/02_week_260319_003440_3.jpg)
 ![Week 2 Notes Part 4](images/02_week_260319_003440_4.jpg)
 
-Add your entry here.
+I also included two versions of the Cipher Comparision Table at the end (one table was generated from a markdown file ran on github, and the other was from gemini 3.1) because I actually like having both of them to look back at.
+
+---
+
+## Tutorial Tasks & Cryptanalysis
+### 
